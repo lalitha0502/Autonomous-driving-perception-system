@@ -1,0 +1,23 @@
+model_path: yolov8n.pt
+input_path: ""
+output_path: outputs/detections.mp4
+classes:
+  - person
+  - bicycle
+  - car
+  - motorcycle
+  - bus
+  - truck
+confidence_threshold: 0.3
+iou_threshold: 0.45
+image_size: 640
+device: cpu
+tracking_enabled: true
+tracker_config: bytetrack.yaml
+metrics_overlay: true
+pipeline_mode: sync
+queue_size: 8
+display: false
+save_output: true
+codec: mp4v
+window_name: Tracking Output
